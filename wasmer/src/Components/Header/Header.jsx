@@ -59,10 +59,10 @@ const Header = () => {
               {anchorEl && (
                 <Popper open={Boolean(anchorEl)} anchorEl={anchorEl} placement="bottom-start" disablePortal>
                   <motion.div
-                    initial={{ opacity: 0, y: -10 }} // Start faded and slightly above
-                    animate={{ opacity: 1, y: 0 }} // Fade in and slide down
-                    exit={{ opacity: 0, y: -10 }} // Fade out and slide up
-                    transition={{ duration: 0.2 }} // Smooth transition
+                    initial={{ opacity: 0, y: -10 }} 
+                    animate={{ opacity: 1, y: 0 }} 
+                    exit={{ opacity: 0, y: -10 }} 
+                    transition={{ duration: 0.2 }}
                   >
                     <Paper sx={{ p: 2, borderRadius: 2, boxShadow: 3, width: 220 }}>
                       {productItems.map((item, index) => (
