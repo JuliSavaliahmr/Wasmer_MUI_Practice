@@ -1,12 +1,15 @@
 import React from 'react';
+
 import { Box, Container, Typography } from '@mui/material';
+
+import Logo from '../../assets/images/Logo.png'
 
 const Footer = () => {
     return (
         <>
             <Container sx={{ display: "flex", justifyContent: "space-between", py:'100px', width: "80%", color: "#444", }}>
             <Box>
-                <Box component='img' src='/public/Logo.png'></Box>
+                <Box component='img' src={Logo}></Box>
                 <Typography variant="subtitle1" sx={{ display: 'block', py: '10px' }}>Making software <br />universally accessible</Typography>
             </Box>
             <Box>

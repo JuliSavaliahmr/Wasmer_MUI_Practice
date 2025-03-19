@@ -1,6 +1,10 @@
 import React from "react";
+
 import { Box, Container, Typography, Button, Grid } from "@mui/material";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+
+import vercel from '../../assets/images/Group 186.png';
+
 
 const TrustedSection = () => {
     return (
@@ -11,7 +15,7 @@ const TrustedSection = () => {
             <Typography variant="h6" sx={{ textAlign: "center", my: 2 }} className="secondary-color">
                 "This programming tool makes it easier for apps to <br />work anywhere"
             </Typography>
-            <Box component="img" src="/public/Group 186.png" sx={{ mb: 4 }} />
+            <Box component="img" src={vercel} sx={{ mb: 4 }} />
 
             <Grid item md={6} sx={{width:'60%', backgroundColor: 'black',marginTop:'40px', padding: '60px 40px', borderRadius: '15px', display: 'flex', alignItems: 'center', boxShadow: "-10px -10px 30px rgb(240 233 144 / 60%), 10px -10px 30px rgb(162 255 151 / 40%), -10px 10px 30px rgb(255 44 91 / 50%), 10px 10px 30px rgba(100, 200, 255, 0.6)",height:'200px', justifyContent: 'space-between' }}>
                 <Box>
