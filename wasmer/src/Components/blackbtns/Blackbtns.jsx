@@ -15,7 +15,7 @@ const Blackbtns = ({ img, name, img1, name1 }) => {
                             backgroundColor: "black",
                             color: "white",
                             padding: "5px 24px",
-                            width: '171px',
+                            width: '221px',
                             justifyContent: 'center',
                             border: '0',
                             height: '54px',

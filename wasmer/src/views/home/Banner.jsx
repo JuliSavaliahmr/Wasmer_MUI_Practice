@@ -39,6 +39,7 @@ import p25 from '../../assets/images/home/p25.png'
 import p26 from '../../assets/images/home/p26.png'
 import p27 from '../../assets/images/home/p27.png'
 import p28 from '../../assets/images/home/p28.png'
+import Demo from '../../assets/images/vectors/Demo.png'
 
 const Banner = () => {
   const products = [
@@ -51,6 +52,7 @@ const Banner = () => {
     <>
       {/* Hero Section */}
       <Stack sx={{ padding: "88px 0", position: "relative" }}>
+        <Box component='img' src={Demo} sx={{position:'absolute',left:'10%'}}></Box>
         <Typography
           variant='h3'
           sx={{
