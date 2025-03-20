@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Box, Typography, Button } from '@mui/material';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
-const Blackbox = ({ title, subtitle, shadow, img }) => {
+const Blackbox = ({ title, subtitle, shadow, img ,shadows}) => {
     return (
         <>
             {shadow ? (
@@ -15,7 +15,7 @@ const Blackbox = ({ title, subtitle, shadow, img }) => {
                         height: '133px',
                         backgroundColor: 'black',
                         margin: 'auto',
-                        padding: '60px 40px',
+                        padding: '0px 40px',
                         borderRadius: '15px',
                         display: 'flex',
                         alignItems: 'center',
@@ -24,7 +24,7 @@ const Blackbox = ({ title, subtitle, shadow, img }) => {
                     }}
                 >
                     <Box>
-                        <Typography variant="h5" color="white" sx={{ fontSize: '28px' }}>
+                        <Typography variant="h5" color="white" sx={{ fontSize: {xs:'15px',sm:'18px' ,md:'20px',lg:'28px' }}}>
                             {title}
                         </Typography>
                         <Typography variant="body1" className="secondary-color" sx={{ padding: '10px 0' }}>
@@ -52,7 +52,6 @@ const Blackbox = ({ title, subtitle, shadow, img }) => {
                     </Button>
                 </Grid>
             ) : (
-
                 <Grid
                     item
                     md={4}
@@ -61,18 +60,18 @@ const Blackbox = ({ title, subtitle, shadow, img }) => {
                         height: '133px',
                         backgroundColor: 'black',
                         margin: 'auto',
-                        padding: '60px 40px',
+                        padding: '0px 40px',
                         borderRadius: '15px',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'space-between',
                         position: 'relative',
-                        boxShadow: '0px -77px 248px -30px #208b20',
+                        boxShadow: shadows,
                         zIndex: '2'
                     }}
                 >
                     <Box>
-                        <Typography variant="h5" color="white" sx={{ fontSize: '28px' }}>
+                        <Typography variant="h5" color="white" sx={{ fontSize: {xs:'15px',sm:'18px' ,md:'20px',lg:'28px' }}}>
                             {title}
                         </Typography>
                         <Typography variant="body1" className="secondary-color" sx={{ padding: '10px 0' }}>

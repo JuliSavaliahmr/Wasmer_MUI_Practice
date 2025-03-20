@@ -15,7 +15,7 @@ const Blackbtns = ({ img, name, img1, name1 }) => {
                             backgroundColor: "black",
                             color: "white",
                             padding: "5px 24px",
-                            width: '221px',
+                            width: '171px',
                             justifyContent: 'center',
                             border: '0',
                             height: '54px',
@@ -54,10 +54,10 @@ const Blackbtns = ({ img, name, img1, name1 }) => {
                             "&::after": {
                                 content: '""',
                                 position: 'absolute',
-                                bottom: '0',
+                                bottom: '54px',
                                 left: '50%',
                                 transform: "rotate(180deg)",
-                                height: '244px',
+                                height: '112px',
                                 width: '2px',
                                 background: "linear-gradient(180deg, rgba(15, 5, 24, 0.2) 0%, rgba(15, 5, 24, 0) 100%)",
                             }

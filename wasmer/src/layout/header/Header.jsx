@@ -7,6 +7,7 @@ import DiscordIcon from "@mui/icons-material/SportsEsports";
 import StorageIcon from "@mui/icons-material/Storage";
 import CloudQueueIcon from "@mui/icons-material/CloudQueue";
 import LayersIcon from "@mui/icons-material/Layers";
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import {motion} from 'framer-motion';
 
 import Logo from '../../assets/images/Logo.png';
@@ -39,7 +40,8 @@ const Header = () => {
           <TextField
             placeholder="Search packages, users or apps"
             size="small"
-            sx={{ width: 287, backgroundColor: "#0F05180D", borderRadius: 2 , outline:'none',  "& fieldset": { border: "none" }}}
+            sx={{ width: 287, backgroundColor: "#0F05180D", borderRadius: 2 , outline:'none',  "& fieldset": { border: "none" },display:{xs:'none',sm:'none',md:'flex'
+            }}}
             InputProps={{
               startAdornment: (
                 <InputAdornment position="start">
@@ -50,7 +52,8 @@ const Header = () => {
           />
 
           {/* Navigation Links */}
-          <Stack direction="row" spacing={5} sx={{ justifyContent: "center" }}>
+          <Stack direction="row" spacing={5} sx={{ justifyContent: "center" ,display:{xs:'none' , sm:'none' , md:'none' ,lg:'flex'
+          } }}>
             {/* Products Menu */}
             <Box onMouseEnter={handleHover} onMouseLeave={handleClose}>
               <Typography variant="body1" sx={{ cursor: "pointer", color: "gray", "&:hover": { color: "black" } }}>
@@ -93,6 +96,7 @@ const Header = () => {
               Blog
             </Typography>
           </Stack>
+       
 
           {/* Icons & Sign-in Button */}
           <Stack direction="row" spacing={1} alignItems="center">
@@ -108,6 +112,9 @@ const Header = () => {
             }}}>
               Sign in
             </Button>
+            <Box sx={{display:{xs:'block',sm:'block',md:'block',lg:'none'}}}> 
+            <MenuOpenIcon sx={{fontSize:'27px'}}></MenuOpenIcon>
+          </Box>
           </Stack>
         </Toolbar>
       </Container>
