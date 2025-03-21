@@ -12,7 +12,7 @@ import TrustedSection from './home/TrustedSection'
 
 const Home = () => {
   return (
-    <Stack className='bg-gradient1'>
+    <Stack className='bg-gradient1' sx={{overflowX:'hidden!important'}}>
       <Header />
       <Banner/>
       <RunTheWorld/>

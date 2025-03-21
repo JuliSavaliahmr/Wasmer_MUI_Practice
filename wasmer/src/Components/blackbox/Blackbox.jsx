@@ -2,53 +2,79 @@ import React from 'react';
 import { Grid, Box, Typography, Button } from '@mui/material';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
-const Blackbox = ({ title, subtitle, shadow, img ,shadows}) => {
+const Blackbox = ({ title, subtitle, shadow, img, shadows }) => {
     return (
         <>
             {shadow ? (
-
                 <Grid
                     item
                     md={4}
                     sx={{
-                        maxWidth: '804px',
-                        height: '133px',
+                        maxWidth: { xs: '90%', sm: '85%', md: '804px' },
+                        height: { xs: 'auto', sm: 'auto', md: '133px' },
                         backgroundColor: 'black',
                         margin: 'auto',
-                        padding: '0px 40px',
+                        padding: { xs: '20px', sm: '24px', md: '0px 40px' },
                         borderRadius: '15px',
                         display: 'flex',
+                        flexDirection: { xs: 'column', sm: 'row', md: 'row' },
                         alignItems: 'center',
+                        textAlign: { xs: 'left!important', sm: 'left', md: 'left' },
                         boxShadow: shadow,
-                        justifyContent: 'space-between'
+                        justifyContent: { xs: 'center', sm: 'center', md: 'space-between' },
+                        gap: { xs: 2, sm: 2, md: 0 }
                     }}
                 >
-                    <Box>
-                        <Typography variant="h5" color="white" sx={{ fontSize: {xs:'15px',sm:'18px' ,md:'20px',lg:'28px' }}}>
+                    <Box sx={{marginRight:'auto!important'}}>
+                        <Typography 
+                            variant="h5" 
+                            color="white" 
+                            sx={{ 
+                                fontSize: { xs: '16px', sm: '18px', md: '20px', lg: '28px' },
+                                fontWeight: 'bold',   textAlign: { xs: 'left', sm: 'left', md: 'left' },
+                            }}
+                        >
                             {title}
                         </Typography>
-                        <Typography variant="body1" className="secondary-color" sx={{ padding: '10px 0' }}>
+                        <Typography 
+                            variant="body1" 
+                            className="secondary-color" 
+                            sx={{ 
+                                padding: '10px 0',
+                                fontSize: { xs: '12px', sm: '14px', md: '16px' } 
+                            }}
+                        >
                             {subtitle}
                         </Typography>
                     </Box>
-                    <Button variant="contained" sx={{ backgroundColor: 'white', borderRadius: '50%', height: '60px', width: '60px' , position: 'relative',zIndex:'2',  '&:hover .btn-icon': {
-                            color:'white' 
-                        }, '&::after': {
-                            content: '""',
-                            position: 'absolute',
-                            top: '0',
-                            left: '0',
-                            width: '0%',
-                            height: '100%',
-                            backgroundColor: 'black',
-                            transition: 'all 0.5s ease-in-out',
-                            borderRadius:'50%',
-                            zIndex: '1', 
-                        }, 
-                        '&:hover::after': {
-                            width: '100%', 
-                        },}}>
-                        <ArrowOutwardIcon sx={{ color: 'black' ,zIndex:'3'}} className='btn-icon'  />
+                    <Button 
+                        variant="contained" 
+                        sx={{ 
+                            backgroundColor: 'white', 
+                            borderRadius: '50%', 
+                            minWidth: { xs: 'auto', sm: 'auto', md: '64px' }, 
+                            height: { xs: '45px', sm: '50px', md: '60px' }, 
+                            width: { xs: '45px', sm: '50px', md: '60px' }, 
+                            position: 'relative',
+                            marginLeft: { xs: 'auto', sm: 'auto', md: '0px' },
+                            zIndex: 2,
+                            '&:hover .btn-icon': { color: 'white' },
+                            '&::after': {
+                                content: '""',
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                width: '0%',
+                                height: '100%',
+                                backgroundColor: 'black',
+                                transition: 'all 0.5s ease-in-out',
+                                borderRadius: '50%',
+                                zIndex: 1,
+                            },
+                            '&:hover::after': { width: '100%' }
+                        }}
+                    >
+                        <ArrowOutwardIcon sx={{ color: 'black', zIndex: 3, fontSize: { xs: '18px', sm: '20px', md: '24px' } }} className='btn-icon' />
                     </Button>
                 </Grid>
             ) : (
@@ -56,25 +82,42 @@ const Blackbox = ({ title, subtitle, shadow, img ,shadows}) => {
                     item
                     md={4}
                     sx={{
-                        maxWidth: '804px',
-                        height: '133px',
+                           maxWidth: { xs: '90%', sm: '85%', md: '804px' },
+                        height: { xs: 'auto', sm: 'auto', md: '133px' },
                         backgroundColor: 'black',
                         margin: 'auto',
-                        padding: '0px 40px',
+                        padding: { xs: '20px', sm: '24px', md: '0px 40px' },
                         borderRadius: '15px',
                         display: 'flex',
+                        flexDirection: { xs: 'column', sm: 'row', md: 'row' },
                         alignItems: 'center',
-                        justifyContent: 'space-between',
+                        textAlign: { xs: 'left', sm: 'left', md: 'left' },
+                        justifyContent: { xs: 'center', sm: 'center', md: 'space-between' },
                         position: 'relative',
                         boxShadow: shadows,
-                        zIndex: '2'
+                        zIndex: 2,
+                        gap: { xs: 2, sm: 2, md: 0 }
                     }}
                 >
-                    <Box>
-                        <Typography variant="h5" color="white" sx={{ fontSize: {xs:'15px',sm:'18px' ,md:'20px',lg:'28px' }}}>
+                    <Box sx={{marginRight:'auto!important'}}>
+                        <Typography 
+                            variant="h5" 
+                            color="white" 
+                            sx={{ 
+                                fontSize: { xs: '16px', sm: '18px', md: '20px', lg: '28px' },
+                                fontWeight: 'bold'
+                            }}
+                        >
                             {title}
                         </Typography>
-                        <Typography variant="body1" className="secondary-color" sx={{ padding: '10px 0' }}>
+                        <Typography 
+                            variant="body1" 
+                            className="secondary-color" 
+                            sx={{ 
+                                padding: '10px 0',
+                                fontSize: { xs: '12px', sm: '14px', md: '16px' } 
+                            }}
+                        >
                             {subtitle}
                         </Typography>
                     </Box>
@@ -93,27 +136,34 @@ const Blackbox = ({ title, subtitle, shadow, img ,shadows}) => {
                             }}
                         />
                     )}
-                    <Button variant="contained" sx={{
-                        backgroundColor: 'white', borderRadius: '50%', height: '60px', width: '60px', position: 'relative',zIndex:'2',  '&:hover .btn-icon': {
-                            color:'white' 
-                        }, '&::after': {
-                            content: '""',
-                            position: 'absolute',
-                            top: '0',
-                            left: '0',
-                            width: '0%',
-                            height: '100%',
-                            backgroundColor: 'black',
-                            transition: 'all 0.5s ease-in-out',
-                            borderRadius:'50%',
-                            zIndex: '1', 
-                        }, 
-                        '&:hover::after': {
-                            width: '100%', 
-                        },
-                       
-                    }}>
-                        <ArrowOutwardIcon sx={{ color: 'black' ,zIndex:'3'}} className='btn-icon' />
+                    <Button 
+                        variant="contained" 
+                        sx={{
+                            backgroundColor: 'white', 
+                            borderRadius: '50%', 
+                            minWidth: { xs: 'auto', sm: 'auto', md: '64px' }, 
+                            height: { xs: '45px', sm: '50px', md: '60px' }, 
+                            width: { xs: '45px', sm: '50px', md: '60px' }, 
+                            position: 'relative',
+                            marginLeft: { xs: 'auto', sm: 'auto', md: '0px' }, 
+                            zIndex: 2,
+                            '&:hover .btn-icon': { color: 'white' },
+                            '&::after': {
+                                content: '""',
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                width: '0%',
+                                height: '100%',
+                                backgroundColor: 'black',
+                                transition: 'all 0.5s ease-in-out',
+                                borderRadius: '50%',
+                                zIndex: 1,
+                            },
+                            '&:hover::after': { width: '100%' }
+                        }}
+                    >
+                        <ArrowOutwardIcon sx={{ color: 'black', zIndex: 3, fontSize: { xs: '18px', sm: '20px', md: '24px' } }} className='btn-icon' />
                     </Button>
                 </Grid>
             )}

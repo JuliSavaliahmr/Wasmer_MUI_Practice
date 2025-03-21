@@ -5,14 +5,23 @@
     font-weight: 400;
     src: local('Gilroy-Medium'), url('https://fonts.cdnfonts.com/s/16219/Gilroy-Medium.woff') format('woff');
 }
-*{
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body,.MuiTypography-root {
-    font-family: 'Gilroy-Medium'!important;
+
+body, .MuiTypography-root {
+    font-family: 'Gilroy-Medium', sans-serif !important;
+    overflow-x: hidden;
 }
+
+.btn-font {
+    font-family: 'Azeret Mono', monospace !important;
+}
+
 
 /* .bg-gradient1{background: linear-gradient(180deg, #EFF1F6 0%, #FCFCFE 100%);} */
 .bg-gradient1{
@@ -31,4 +40,4 @@ body,.MuiTypography-root {
     width:100%;
     height:100%;
 }
-
+/* https://www.figma.com/design/TdsenHtvqlmzPYjf4u2cf3/Untitled?node-id=521-69&t=m3W6WwbptAPvgA4B-0 */
