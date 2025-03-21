@@ -24,7 +24,7 @@
 //                 <Container>
 //                     <Typography variant="h3" textAlign='center' sx={{ padding: { xs: '20px 0 16px 0', md: '24px 0 16px 0' }, fontWeight: '600', lineHeight:'140%',fontSize: { xs: '36px', sm: '2.2rem', md: '48px' } }} color="initial">Run the world </Typography>
 //                     <Typography variant="h6" sx={{ textAlign: 'center', width: { xs: '90%', sm: '80%', md: '70%', lg: '60%' }, mx: 'auto', fontSize: { xs: '0.9rem', sm: '1rem', md: '22px' }, fontWeight: '500', }} className='secondary-color'>Using a binary for each platform and chip is the past. Rise above with lightweight containerized apps that simply run everywhere.</Typography>
-                    
+
 //                     <Box sx={{ display: "flex", flexWrap: 'wrap', gap: { xs: 1, sm: 1.5, md: 2 }, justifyContent:'center', padding:{ xs: '56px 0 12px 0', md: '55px 0 16px 0' }, zIndex:3, position:'relative',alignItems:'center'}}>
 //                         <Box component="img" src={c5} sx={{ width: { xs: 32, sm: 36, md: 42 }, height: { xs: 32, sm: 36, md: 32 } }} />
 //                         <Box component="img" src={c2} sx={{ width: { xs: 32, sm: 36, md: 42 }, height: { xs: 32, sm: 36, md: 42 } }} />
@@ -66,55 +66,55 @@ const RunTheWorld = () => {
             <Blackbtns img1={runimg} name1="RunTime" />
 
             <Container>
-                <Typography 
-                    variant="h3" 
-                    textAlign="center" 
-                    sx={{ 
-                        padding: { xs: '20px 0 16px 0', md: '24px 0 16px 0' }, 
-                        fontWeight: '600', 
-                        lineHeight: '140%', 
-                        fontSize: { xs: '36px', sm: '2.2rem', md: '48px' } 
-                    }} 
+                <Typography
+                    variant="h3"
+                    textAlign="center"
+                    sx={{
+                        padding: { xs: '20px 0 16px 0', md: '24px 0 16px 0' },
+                        fontWeight: '600',
+                        lineHeight: '140%',
+                        fontSize: { xs: '36px', sm: '2.2rem', md: '48px' }
+                    }}
                 >
                     Run the world
                 </Typography>
 
-                <Typography 
-                    variant="h6" 
-                    sx={{ 
-                        textAlign: 'center', 
-                        width: { xs: '90%', sm: '80%', md: '70%', lg: '60%' }, 
-                        mx: 'auto', 
-                        fontSize: { xs: '0.9rem', sm: '1rem', md: '22px' }, 
-                        fontWeight: '500' 
-                    }} 
+                <Typography
+                    variant="h6"
+                    sx={{
+                        textAlign: 'center',
+                        width: { xs: '90%', sm: '80%', md: '70%', lg: '60%' },
+                        mx: 'auto',
+                        fontSize: { xs: '0.9rem', sm: '1rem', md: '22px' },
+                        fontWeight: '500'
+                    }}
                     className="secondary-color"
                 >
-                    Using a binary for each platform and chip is the past. 
+                    Using a binary for each platform and chip is the past.
                     Rise above with lightweight containerized apps that simply run everywhere.
                 </Typography>
 
                 {/* Icons Responsive Layout */}
-                <Box 
-                    sx={{ 
-                        display: "flex", 
-                        flexWrap: "wrap", 
-                        gap: { xs: 2, sm: 2, md: 2 }, 
-                        justifyContent: "center", 
-                        padding: { xs: '56px 0 12px 0', md: '55px 0 16px 0' }, 
-                        zIndex: 3, 
-                        position: "relative", 
-                        alignItems: "center", 
-                        flexDirection: { xs: "column", sm: "column", md: "row" } 
+                <Box
+                    sx={{
+                        display: "flex",
+                        flexWrap: "wrap",
+                        gap: { xs: 2, sm: 2, md: 2 },
+                        justifyContent: "center",
+                        padding: { xs: '56px 0 12px 0', md: '55px 0 16px 0' },
+                        zIndex: 3,
+                        position: "relative",
+                        alignItems: "center",
+                        flexDirection: { xs: "column", sm: "column", md: "row" }
                     }}
                 >
                     {/* First two images on top for xs & sm */}
-                    <Box 
-                        sx={{ 
-                            display: "flex", 
-                            justifyContent: "center", 
-                            gap: { xs: 2, sm: 3 }, 
-                            flexWrap: "wrap" 
+                    <Box
+                        sx={{
+                            display: "flex",
+                            justifyContent: "center",
+                            gap: { xs: 2, sm: 3 },
+                            flexWrap: "wrap"
                         }}
                     >
                         <Box component="img" src={c5} sx={{ width: { xs: 40, sm: 44, md: 42 }, height: { xs: 40, sm: 44, md: 42 } }} />
@@ -122,13 +122,13 @@ const RunTheWorld = () => {
                     </Box>
 
                     {/* Remaining images below for xs & sm */}
-                    <Box 
-                        sx={{ 
-                            display: "flex", 
-                            justifyContent: "center", 
-                            gap: { xs: 2, sm: 3 }, 
-                            flexWrap: "wrap", 
-                            mt: { xs: 1, sm: 2, md: 0 } 
+                    <Box
+                        sx={{
+                            display: "flex",
+                            justifyContent: "center",
+                            gap: { xs: 2, sm: 3 },
+                            flexWrap: "wrap",
+                            mt: { xs: 1, sm: 2, md: 0 }
                         }}
                     >
                         <Box component="img" src={c3} sx={{ width: { xs: 40, sm: 44, md: 42 }, height: { xs: 40, sm: 44, md: 42 } }} />
@@ -138,52 +138,52 @@ const RunTheWorld = () => {
                     </Box>
                 </Box>
 
-                <Typography 
-                    variant="subtitle1" 
-                    sx={{ 
-                        textAlign: 'center', 
-                        color: 'white', 
-                        paddingBottom: { xs: '20px', md: '16px' }, 
-                        fontSize: { xs: '16px', sm: '18px', md: '22px' }, 
-                        zIndex: 3, 
-                        position: 'relative' 
+                <Typography
+                    variant="subtitle1"
+                    sx={{
+                        textAlign: 'center',
+                        color: 'white',
+                        paddingBottom: { xs: '20px', md: '16px' },
+                        fontSize: { xs: '16px', sm: '18px', md: '22px' },
+                        zIndex: 3,
+                        position: 'relative'
                     }}
                 >
                     Supports almost every programming language
                 </Typography>
 
-                <Blackbox 
-                    title="Truly universal, runs everywhere & fast as native." 
-                    subtitle="See more info about Runtime" 
-                    img={v1} 
+                <Blackbox
+                    title="Truly universal, runs everywhere & fast as native."
+                    subtitle="See more info about Runtime"
+                    img={v1}
                     shadows="14px -68px 106px 53px #89ad89"
                 />
 
-                <Typography 
-                    variant="h6" 
-                    className="secondary-color" 
-                    sx={{ 
-                        textAlign: "center", 
-                        padding: { xs: "40px 0 0 0", md: "64px 0 0 0" }, 
-                        width: { xs: "100%", sm: "60%", md: "50%", lg: "45%" }, 
-                        fontWeight: "500", 
-                        lineHeight: "140%", 
-                        mx: "auto", 
-                        fontSize: { xs: "17px", sm: "1rem", md: "22px" } 
+                <Typography
+                    variant="h6"
+                    className="secondary-color"
+                    sx={{
+                        textAlign: "center",
+                        padding: { xs: "40px 0 0 0", md: "64px 0 0 0" },
+                        width: { xs: "100%", sm: "60%", md: "50%", lg: "45%" },
+                        fontWeight: "500",
+                        lineHeight: "140%",
+                        mx: "auto",
+                        fontSize: { xs: "17px", sm: "1rem", md: "22px" }
                     }}
                 >
                     "This programming tool makes it easier for apps to work anywhere"
                 </Typography>
 
-                <Box 
-                    component="img" 
-                    src={vercel} 
-                    sx={{ 
-                        mx: "auto", 
-                        display: "block", 
-                        padding: { xs: "30px 0", md: "24px 0" }, 
-                        width: { xs: "35%", sm: "15%", md: "auto" } 
-                    }} 
+                <Box
+                    component="img"
+                    src={vercel}
+                    sx={{
+                        mx: "auto",
+                        display: "block",
+                        padding: { xs: "30px 0", md: "24px 0" },
+                        width: { xs: "20%", sm: "15%", md: "auto" }
+                    }}
                 />
             </Container>
         </Stack>

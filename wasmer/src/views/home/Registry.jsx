@@ -3,7 +3,7 @@ import { Stack, Box, Container, Typography, Grid } from '@mui/material';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import DownloadIcon from '@mui/icons-material/Download';
 
-// Swiper imports
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -104,8 +104,8 @@ const Registry = () => {
                                     padding: '20px',
                                     border: '1px solid #b7b7b766',
                                     textAlign: 'left',
-                                    width: { xs: '100%', sm: '65%' }, // 65% width for sm
-                                    mx: { xs: '0', sm: 'auto' }, // Centering on sm
+                                    width: { xs: '100%', sm: '65%' }, 
+                                    mx: { xs: '0', sm: 'auto' }, 
                                     my: { xs: '15px', sm: '17px' }
                                 }}>
                                     <Box component="img" src={card.img} sx={{ maxWidth: '100%', height: 'auto' }} />
@@ -145,7 +145,7 @@ const Registry = () => {
                             borderRadius: '15px',
                             padding: '32px',
                             border: '1px solid #b7b7b766',
-                            zIndex:'8'
+                            zIndex: '8'
                         }}>
                             <Box component="img" src={card.img} sx={{ maxWidth: '100%', height: 'auto' }} />
                             <Typography variant="subtitle2" sx={{ padding: '10px 0' }}>
@@ -176,16 +176,16 @@ const Registry = () => {
                     }}>
                         "This programming tool makes it easier for apps to work anywhere"
                     </Typography>
-                    <Box 
-                                                            component="img" 
-                                                            src={vercel} 
-                                                            sx={{ 
-                                                                mx: "auto", 
-                                                                display: "block", 
-                                                                padding: { xs: "30px 0", md: "24px 0" }, 
-                                                                width: { xs: "20%", sm: "15%", md: "auto" } 
-                                                            }} 
-                                                        />
+                    <Box
+                        component="img"
+                        src={vercel}
+                        sx={{
+                            mx: "auto",
+                            display: "block",
+                            padding: { xs: "30px 0", md: "24px 0" },
+                            width: { xs: "20%", sm: "15%", md: "auto" }
+                        }}
+                    />
                 </Container>
             </Stack>
         </>
